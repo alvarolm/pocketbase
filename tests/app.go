@@ -9,10 +9,10 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/hook"
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/tools/hook"
 
-	_ "github.com/pocketbase/pocketbase/migrations"
+	_ "github.com/alvarolm/pocketbase/migrations"
 )
 
 // TestApp is a wrapper app instance used for testing.

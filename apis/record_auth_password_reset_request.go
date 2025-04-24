@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/mails"
+	"github.com/alvarolm/pocketbase/tools/routine"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/mails"
-	"github.com/pocketbase/pocketbase/tools/routine"
 )
 
 func recordRequestPasswordReset(e *core.RequestEvent) error {

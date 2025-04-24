@@ -14,12 +14,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/tests"
+	"github.com/alvarolm/pocketbase/tools/filesystem"
+	"github.com/alvarolm/pocketbase/tools/hook"
+	"github.com/alvarolm/pocketbase/tools/types"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/types"
 	"github.com/spf13/cast"
 )
 

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/tests"
+	"github.com/alvarolm/pocketbase/tools/types"
 )
 
 func TestGeoPointFieldBaseMethods(t *testing.T) {

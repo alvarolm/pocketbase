@@ -5,8 +5,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/alvarolm/pocketbase/tools/hook"
+	"github.com/alvarolm/pocketbase/tools/types"
 )
 
 const (

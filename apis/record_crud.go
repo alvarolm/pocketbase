@@ -9,15 +9,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/forms"
+	"github.com/alvarolm/pocketbase/tools/filesystem"
+	"github.com/alvarolm/pocketbase/tools/inflector"
+	"github.com/alvarolm/pocketbase/tools/list"
+	"github.com/alvarolm/pocketbase/tools/router"
+	"github.com/alvarolm/pocketbase/tools/search"
+	"github.com/alvarolm/pocketbase/tools/security"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/inflector"
-	"github.com/pocketbase/pocketbase/tools/list"
-	"github.com/pocketbase/pocketbase/tools/router"
-	"github.com/pocketbase/pocketbase/tools/search"
-	"github.com/pocketbase/pocketbase/tools/security"
 )
 
 // bindRecordCrudApi registers the record crud api endpoints and

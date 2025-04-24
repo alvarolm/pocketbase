@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/tools/router"
+	"github.com/alvarolm/pocketbase/tools/search"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/router"
-	"github.com/pocketbase/pocketbase/tools/search"
 )
 
 // bindCollectionApi registers the collection api endpoints and the corresponding handlers.

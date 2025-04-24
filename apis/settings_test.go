@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pocketbase/pocketbase/tests"
+	"github.com/alvarolm/pocketbase/tests"
 )
 
 func TestSettingsList(t *testing.T) {

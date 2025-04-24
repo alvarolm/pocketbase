@@ -1,6 +1,6 @@
 package core
 
-import "github.com/pocketbase/pocketbase/tools/types"
+import "github.com/alvarolm/pocketbase/tools/types"
 
 var (
 	_ Model = (*Log)(nil)

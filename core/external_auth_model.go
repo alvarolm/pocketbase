@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 
+	"github.com/alvarolm/pocketbase/tools/auth"
+	"github.com/alvarolm/pocketbase/tools/hook"
+	"github.com/alvarolm/pocketbase/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/tools/auth"
-	"github.com/pocketbase/pocketbase/tools/hook"
-	"github.com/pocketbase/pocketbase/tools/types"
 )
 
 var (

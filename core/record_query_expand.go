@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/alvarolm/pocketbase/tools/dbutils"
+	"github.com/alvarolm/pocketbase/tools/list"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/tools/dbutils"
-	"github.com/pocketbase/pocketbase/tools/list"
 )
 
 // ExpandFetchFunc defines the function that is used to fetch the expanded relation records.

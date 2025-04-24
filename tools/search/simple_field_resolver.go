@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/alvarolm/pocketbase/tools/inflector"
+	"github.com/alvarolm/pocketbase/tools/list"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/tools/inflector"
-	"github.com/pocketbase/pocketbase/tools/list"
 )
 
 // ResolverResult defines a single FieldResolver.Resolve() successfully parsed result.

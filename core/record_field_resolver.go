@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/alvarolm/pocketbase/tools/search"
+	"github.com/alvarolm/pocketbase/tools/security"
+	"github.com/alvarolm/pocketbase/tools/types"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/tools/search"
-	"github.com/pocketbase/pocketbase/tools/security"
-	"github.com/pocketbase/pocketbase/tools/types"
 	"github.com/spf13/cast"
 )
 

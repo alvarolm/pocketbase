@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/tests"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
 )
 
 func TestMigrationsRunnerUpAndDown(t *testing.T) {

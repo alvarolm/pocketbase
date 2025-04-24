@@ -14,14 +14,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/alvarolm/pocketbase/apis"
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/tests"
+	"github.com/alvarolm/pocketbase/tools/filesystem"
+	"github.com/alvarolm/pocketbase/tools/mailer"
+	"github.com/alvarolm/pocketbase/tools/router"
 	"github.com/dop251/goja"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/apis"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/router"
 	"github.com/spf13/cast"
 )
 

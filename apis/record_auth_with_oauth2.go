@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alvarolm/pocketbase/core"
+	"github.com/alvarolm/pocketbase/tools/dbutils"
+	"github.com/alvarolm/pocketbase/tools/filesystem"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/dbutils"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
 	"golang.org/x/oauth2"
 )
 

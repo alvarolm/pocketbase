@@ -9,12 +9,12 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/alvarolm/pocketbase/core/validators"
+	"github.com/alvarolm/pocketbase/tools/filesystem"
+	"github.com/alvarolm/pocketbase/tools/list"
+	"github.com/alvarolm/pocketbase/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core/validators"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/list"
-	"github.com/pocketbase/pocketbase/tools/types"
 	"github.com/spf13/cast"
 )
 

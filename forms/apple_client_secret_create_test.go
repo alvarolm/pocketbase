@@ -9,9 +9,9 @@ import (
 	"encoding/pem"
 	"testing"
 
+	"github.com/alvarolm/pocketbase/forms"
+	"github.com/alvarolm/pocketbase/tests"
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/tests"
 )
 
 func TestAppleClientSecretCreateValidateAndSubmit(t *testing.T) {

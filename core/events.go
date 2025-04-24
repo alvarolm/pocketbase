@@ -11,6 +11,7 @@ import (
 	"github.com/alvarolm/pocketbase/tools/router"
 	"github.com/alvarolm/pocketbase/tools/search"
 	"github.com/alvarolm/pocketbase/tools/subscriptions"
+	"github.com/pocketbase/dbx"
 	"golang.org/x/crypto/acme/autocert"
 )
 
@@ -446,8 +447,9 @@ type RecordsListRequestEvent struct {
 	baseCollectionEventData
 
 	// @todo consider removing and maybe add as generic to the search.Result?
-	Records []*Record
-	Result  *search.Result
+	Records     []*Record
+	Result      *search.Result
+	SelectQuery *dbx.SelectQuery
 }
 
 type RecordRequestEvent struct {

@@ -74,27 +74,28 @@ func recordsList(e *core.RequestEvent) error {
 		// fieldsResolver.UpdateQuery(query)
 	}
 
-	// hidden fields are searchable only by superusers
-	fieldsResolver.SetAllowHiddenFields(requestInfo.HasSuperuserAuth())
-
-	searchProvider := search.NewProvider(fieldsResolver).Query(query)
-
-	records := []*core.Record{}
-	result, err := searchProvider.ParseAndExec(e.Request.URL.Query().Encode(), &records)
-	if err != nil {
-		return firstApiError(err, e.BadRequestError("", err))
-	}
-
 	event := new(core.RecordsListRequestEvent)
 	event.RequestEvent = e
 	event.Collection = collection
-	event.Records = records
-	event.Result = result
+	event.SelectQuery = query
 
 	return e.App.OnRecordsListRequest().Trigger(event, func(e *core.RecordsListRequestEvent) error {
 		if err := EnrichRecords(e.RequestEvent, e.Records); err != nil {
 			return firstApiError(err, e.InternalServerError("Failed to enrich records", err))
 		}
+
+		// hidden fields are searchable only by superusers
+		fieldsResolver.SetAllowHiddenFields(requestInfo.HasSuperuserAuth())
+
+		searchProvider := search.NewProvider(fieldsResolver).Query(query)
+
+		records := []*core.Record{}
+		result, err := searchProvider.ParseAndExec(e.Request.URL.Query().Encode(), &records)
+		if err != nil {
+			return firstApiError(err, e.BadRequestError("", err))
+		}
+		event.Records = records
+		event.Result = result
 
 		// Add a randomized throttle in case of too many empty search filter attempts.
 		//
